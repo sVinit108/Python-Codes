@@ -17,7 +17,7 @@ if __name__ == "__main__":
     print(result[:])
     print(v.value)
 
-# Using Queues
+## Using Queues
 # def calc_square(numbers, q):
 #     for n in numbers:
 #         q.put(n*n)
