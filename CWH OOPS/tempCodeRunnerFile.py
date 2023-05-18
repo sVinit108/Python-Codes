@@ -1,0 +1,1 @@
+karan = Employee.from_dash("Karan-480-Student")
