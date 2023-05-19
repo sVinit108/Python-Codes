@@ -24,14 +24,15 @@ async def function3():
   open("instagram3.ico", "wb").write(response.content)
 
 async def main():
-  L = await asyncio.gather(
+  L = await asyncio.gather(   # await ensures that the previous lines are executed before execution of current line. 
+                              # This can be useful if curr_line's exe depndes on prev line's exe.
         function1(),
         function2(),
         function3(),
     )
   print(L)
-  # task = asyncio.create_task(function1())
-  # # await function1()
-  # await function2()
-  # await function3()
+
+t1=time.time()
 asyncio.run(main())
+t2=time.time()
+print(t2-t1)
