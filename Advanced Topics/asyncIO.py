@@ -24,10 +24,6 @@ async def function3():
   open("instagram3.ico", "wb").write(response.content)
 
 async def main():
-  # await function1()
-  # await function2()
-  # await function3()
-  # return 3
   L = await asyncio.gather(
         function1(),
         function2(),
@@ -38,5 +34,4 @@ async def main():
   # # await function1()
   # await function2()
   # await function3()
-
 asyncio.run(main())
