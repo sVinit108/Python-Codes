@@ -14,6 +14,7 @@ print("done for 2")
 print(fx(6))
 print("done for 6")
 
+print("##Effect of Caching##")
 print(fx(20))
 print("done for 20")
 print(fx(2))
